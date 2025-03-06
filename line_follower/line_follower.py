@@ -91,14 +91,14 @@ class LineFollower(Node):
 
     def turn_left(self, speed):
         twist = Twist()
-        twist.linear.x = 0
+        twist.linear.x = 0.0
         twist.angular.z = speed
         self.cmd_vel_pub.publish(twist)
         print("Robot turn left.")
 
     def turn_right(self, speed):
         twist = Twist()
-        twist.linear.x = 0
+        twist.linear.x = 0.0
         twist.angular.z = -speed
         self.cmd_vel_pub.publish(twist)
         print("Robot turn right.")
